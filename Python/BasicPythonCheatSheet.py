@@ -234,6 +234,7 @@ def using_for_loops():
     for z in range(2,10):
         print(z)
 
+    # continue
 
 
 
