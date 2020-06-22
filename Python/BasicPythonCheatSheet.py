@@ -166,5 +166,83 @@ def learning_tuples():
 
 
 
+def using_Dictionaries():
+
+
+    # A dictonary is a collection of data that has a key and a value. Dictonaries are
+    # unordered, and can be changed.
+
+    here_is_a_dictionary = { "Name" : "Deepak", "Age" : 20, "Hair Color" : "Black"}
+
+    # Lets say you want to get the value of the key "Age"
+
+    print(here_is_a_dictionary.get("Age"))
+
+    # Lets say you dye your hair and you want to change your hair color to blonde
+
+    here_is_a_dictionary["Hair Color"] = "Blonde"
+
+
+    # To print the K values (key value):
+
+    for x in here_is_a_dictionary:
+        print(x)
+
+
+    # To print the values of K:
+
+    for x in here_is_a_dictionary:
+        print(here_is_a_dictionary[x])
+
+
+    # You can also use the ".values()" methods in order to get the values within the dictonary
+
+
+    #Lets say you need to grab the length of this dictonary.
+
+    x_val = len(here_is_a_dictionary)
+
+
+    # Need to remove a value from the dictonary?
+
+    here_is_a_dictionary.pop("Name")    # Enter one of the key values
+
+    # Add element
+
+    here_is_a_dictionary["Height"] = "6'3"
+
+    # Convenient Methods
+    # popItem() - Removes Last Element
+    # del here_is_a_dictonary("Age")   < -- Removed Key and Value
+    # here_is_a_dictonary.clear()   <-- clear the list
+
+    # You can also have multiple dictonaries within a Dictonary
+
+    multiple_dictonaries = {{ "Name" : "Deepak", "Age" : 20, "Hair Color" : "Black"},
+                           { "Name" : "Joshua", "Age" : 23, "Hair Color" : "Blonde"},
+                           { "Name" : "Matt", "Age": 22, "Hair Color": "Brown"}}
+
+
+
+def using_for_loops():
+
+    for e in range(6):
+        print(e)
+    # Statement above prints out 0-5
+    # Statement belwo prints out 2-9
+
+    for z in range(2,10):
+        print(z)
+
+
+
+
+
+
+
+
+
+
+
 
 
