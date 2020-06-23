@@ -1,6 +1,5 @@
-
-import random #library for random print statement
-    #Print statement;
+import datetime
+import random
 
 
 
@@ -238,12 +237,71 @@ def using_for_loops():
 
 
 
+def workingWithDate():
+
+    # make sure you import the module "datetime", which is already defined in python
+    print(datetime.datetime.now())
+    # Prints out in format YYYY-M-DAY and provides current time in militarytime.
+
+
+
+def math():
+    # Methods that may be useful in work
+    # pow(x,y)  ,   abs(VALUE),   min(x,y,z) ,  max (x,y,z)
+    # use import statement math to use math.sqrt(x)
+    print("complete")
+
+
+
+def userInput():
+    # To have the user input data, simlply use the input(insert_prompt) here.
+
+    x = input("random value here")
+    print(x)
+
+
+def howToUseTryCatchBlock():
+
+    # Exception handling is quite a vital aspect in programming.
+    # For instance, what is x+y?
+    # Trick question, since x or y have not been defined.
+
+    # try:
+    #   {block of quote to execute}
+    # except:
+    #   {print exception}
+
+    print("complete")
+
+# This part of the guide will deal with IO Streams
+
+
+def openingAFile():
+
+    # Notice in the project structure, there is a file titled "example.txt", which is the file we are going to open
+    # It's also always nice to use a try/except handle when opening files, for cases when the file can't be located.
+
+    try:
+        open("example.txt")
+    except IOError:
+        print("Could not read file")
 
 
 
 
+def readingAFile():
+    file = open("example.txt", "r")
+
+    print(file.read())
 
 
+    # If you need to read the first line, just print(file.readline())
+
+    # print(file.readline())
+
+    # To return the first few characters of the text -->   file.read(10))
+
+    file.close()
 
 
-
+readingAFile()
